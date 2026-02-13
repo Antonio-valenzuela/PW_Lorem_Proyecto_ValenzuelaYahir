@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Lorem Ipsum</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="Inner">
+
+    <header id="Top">
+      <h1>Generador de Lorem Ipsum</h1>
+      <nav>
+        <a href="#quees">¿Qué es?</a>
+        <a href="#generador">Generador</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main id="Content">
+      <section id="Panes">
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="col left" id="quees">
+          <h2>¿Qué es Lorem Ipsum?</h2>
+          <p>
+            Lorem Ipsum es un texto de relleno usado para probar diseños sin distraerse con el contenido final.
+            Sirve para revisar tipografías, espacios y composición.
+          </p>
+
+          <h2>Ejemplo</h2>
+          <p>
+            Este es un ejemplo de texto de muestra para ver cómo se comporta el diseño con párrafos.
+            Puedes generar más texto usando el panel de la derecha.
+          </p>
+        </div>
+
+        <!-- COLUMNA DERECHA -->
+        <aside class="col right" id="generador">
+          <h2>Generador</h2>
+
+          <form id="formGenerator">
+            <label for="amount">Cantidad de párrafos</label>
+            <input type="number" id="amount" min="1" max="20" value="3" />
+
+            <fieldset class="fieldset">
+              <legend>Tipo de salida</legend>
+
+              <label>
+                <input type="radio" name="format" value="paras" checked />
+                Párrafos separados
+              </label>
+
+              <label>
+                <input type="radio" name="format" value="line" />
+                Todo en una sola línea
+              </label>
+            </fieldset>
+
+            <button type="submit" id="btnGenerate">Generar texto</button>
+            <button type="button" id="btnCopy" disabled>Copiar</button>
+
+            <p id="msg" aria-live="polite"></p>
+          </form>
+
+          <div id="result" class="result" aria-label="Resultado generado">
+            <p class="hint">Aquí aparecerá tu texto generado…</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer id="contacto">
+      <p>
+        <strong>Nombre:</strong> Valenzuela Yahir |
+        <strong>Grupo:</strong> (6to) |
+        <a href="https://github.com/Antonio-valenzuela/PW_Lorem_Proyecto_ValenzuelaYahir" target="_blank" rel="noopener">
+          Repositorio en GitHub
+        </a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
